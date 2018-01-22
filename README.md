@@ -1,4 +1,5 @@
 # /scripts/
+Snippets, mostly work related
 ### This git is for storing simple scripts authored for use at my job.
 
 ##### jQuery

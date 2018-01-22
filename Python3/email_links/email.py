@@ -1,4 +1,4 @@
-# Python3
+#!/usr/local/bin/python3
 """ This program replaces dummy links (http://xxxx/...) with live ones from
 photobucket in link.txt; links.txt should have one link per line"""
 ## TODO
