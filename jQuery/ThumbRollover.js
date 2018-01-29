@@ -1,5 +1,3 @@
-// Put the below script at the bottom of template.html to make it effective
-
 var path = window.location.pathname.search(/category/)
 if(path > 0) {
 	$('.category img[src*="/v/vspfiles/photos/"]')
