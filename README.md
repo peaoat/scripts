@@ -12,5 +12,9 @@ Snippets, mostly work related
 
 ##### Python3
 ###### email.py
->modifies the "index.html" file from an InkBrush export to replace references to images with direct links pulled manually from photobucket.
-> *Looking forward to using a different image hosting service with a functional API to be able to upload images and get links automatically.*
+> modifies the "index.html" file from an InkBrush export to replace references to images with direct links pulled manually from photobucket.
+
+> _Looking forward to using a different image hosting service with a functional API to be able to upload images and get links automatically._
+###### renamer.py
+> Changes the names of files in it's own directory to remove "\_mini.jpg"
+> _Would like to set up to remove other phrases with re._
