@@ -17,9 +17,9 @@ Snippets, mostly work related
 
 ##### Python3
 ###### compressor.py
-__Depends on PIL (pillow)__
+_Depends on PIL (pillow)_
 
-_pip3 install pillow_
+_\>pip3 install pillow_
 
 > Compresses all of the jpegs in the cwd from which it's run using pillow
 
