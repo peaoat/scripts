@@ -6,9 +6,13 @@ Snippets, mostly work related
 ### This git is for storing simple scripts authored for use at my job.
 
 
-##### jQuery
+##### JavaScript
 ###### CheckAcc.js
 > (for Volusion stores) Replaces #user_icon with a different image if the user is logged in
+
+###### mobile_img.js
+> (for Volusion stores) Whenever the window size changes, check the width. If the width is under or over a particular breakpoint, change the logo img's src to match.
+
 ###### ThumbRollover.js
 > (for Volusion stores) Replaces a product image in a Volusion store when browsing in "categories" under some templates.
 
