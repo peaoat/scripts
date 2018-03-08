@@ -3,8 +3,8 @@
 
 var breakpoint = 470
 var selector = '.logo__img'
-var desktop_img = 'bg.png'
-var mobile_img = 'mobile.png'
+var desktop_img = 'templates/263/images/template/header_bg.png'
+var mobile_img = 'mobiletemplate/header_normal.png'
 
 function changeLogo(){
 	if ($(window).width() <= breakpoint) {
