@@ -17,7 +17,8 @@ Snippets, mostly work related
 > (for Volusion stores) Whenever the window size changes, check the width. If the width is under or over a particular breakpoint, change the logo img's src to match.
 
 ##### ThumbRollover.js
-> (for Volusion stores) Targets all images which match the '.category img[src\*="/v/vspfiles/photos/"]' selector and gives a mouseover/mouseout pair of events which change the displayed image if one exists.
+> _pure js_
+> (for Volusion stores) Targets all images which match a particular querySelector and adds a mouseover/mouseout pair of events which change the displayed image if an alternate exists.
 
 
 #### Python3
