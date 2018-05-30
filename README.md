@@ -13,6 +13,9 @@ Snippets, mostly work related
 ##### CheckAcc.js
 > (for Volusion stores) Replaces #user_icon with a different image if the user is logged in
 
+#### disableOOS.js
+> (for Volusion stores) Makes the table holding "add to cart" and similar information invisible when an item is out of stock.
+
 ##### mobile_img.js
 > (for Volusion stores) Whenever the window size changes, check the width. If the width is under or over a particular breakpoint, change the logo img's src to match.
 
@@ -21,7 +24,10 @@ Snippets, mostly work related
 > (for Volusion stores) Targets all images which match a particular querySelector and adds a mouseover/mouseout pair of events which change the displayed image if an alternate exists.
 
 
-#### Python3
+#### Python 3
+> _These are most likely to be Python 3.6_
+
+
 ##### compressor.py
 >_Depends on PIL (pillow)_
 
