@@ -5,6 +5,15 @@
 Snippets, mostly work related
 ### This git is for storing simple scripts authored for use at my job.
 
++---------->8----------+
+
+#### Bundled
+> _This category contains files with multiple syntaxes rolled up into one snippet. ie HTML/CSS/JS_
+
+##### gdprpopup.html
+> _(for Volusion stores) Pops over a web page with a text box to alert the user to an update._
+
++---------->8----------+
 
 #### JavaScript
 > _A lot of these js scripts rely on jQuery. It is safe to assume any one of these relies on jQuery_
@@ -23,6 +32,7 @@ Snippets, mostly work related
 > _pure js_
 > (for Volusion stores) Targets all images which match a particular querySelector and adds a mouseover/mouseout pair of events which change the displayed image if an alternate exists.
 
++---------->8----------+
 
 #### Python 3
 > _These are most likely to be Python 3.6_
@@ -41,6 +51,4 @@ Snippets, mostly work related
 > _Looking forward to using a different image hosting service with a functional API to be able to upload images and get links automatically._
 
 ##### renamer.py
-> Changes the names of files in it's own directory to remove "\_mini.jpg"
-
-> _Would like to set up to remove other phrases with re._
+> Very simple script which changes the names of files in it's own directory to remove "\_mini.jpg"

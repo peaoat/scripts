@@ -1,0 +1,118 @@
+<style>
+.gdpr-hidden {
+    display: none;
+    z-index: -999999999 !important;
+    top: -100% !important;
+}
+#gdpr-pop-up {
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: fixed;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 525px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    z-index: 999999;
+}
+#gdpr-pop-up > .gdpr-close {
+    transition: all 0.5s ease;
+    position: absolute;
+    background-color: #000000;
+    padding: 1.5px 7px;
+    left: 0;
+    margin-left: -10px;
+    margin-top: -10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: white;
+    box-shadow: -3px 1px 6px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: -3px 1px 6px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: -3px 1px 6px 0px rgba(0,0,0,0.1);
+    text-decoration: none;
+    line-height: inherit;
+}
+#gdpr-pop-up > .gdpr-close:hover {
+    background-color: #d90628;
+}
+#gdpr-pop-up > h3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    background-color: #d80021;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+#gdpr-pop-up > p {
+    padding: 20px 65px 10px 65px;
+    color: dimgray;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+#gdpr-pop-up > .gdpr-consent {
+    background-color: #d80021;
+    margin-bottom: 33px;
+    border-style: solid;
+    border-width: 0px;
+    cursor: pointer;
+    font-weight: normal;
+    line-height: normal;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    display: inline-block;
+    padding: 1rem 2rem 1.0625rem 2rem;
+    font-size: 1rem;
+    border-color: #007095;
+    color: #ffffff;
+    transition: background-color 300ms ease-out;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+#gdpr-pop-up > .gdpr-consent:hover {
+    background-color: #333333;
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+}
+</style>
+<script>
+var gdprhide = function () {
+    document.cookie = "threds-gdpr-consent=true;";
+    document.getElementById('gdpr-pop-up').classList.add('gdpr-hidden');
+}
+window.addEventListener('load', function () {
+    if (document.cookie.indexOf('threds-gdpr-consent') === -1) {
+        $tgdpr = document.getElementById('gdpr-pop-up');
+        if ($tgdpr.classList.contains('gdpr-hidden')) {
+            $tgdpr.classList.remove('gdpr-hidden');
+        }
+    }
+});
+</script>
+<div id="gdpr-pop-up" class="gdpr-hidden">
+    <a href="#" onclick="gdprhide()" class="gdpr-close">&#10006;</a>
+    <h3> We've updated our Cookie Policy </h3>
+    <p>
+        Starting May 25th, 2018 We have changed our Cookie Policy to conform to the EU's new GDPR Privacy Laws.
+    </p>
+    <p>
+        This website uses cookies to enhance and improve your browsing experience. For further information on how we use cookies and how to change your browser settings, please read our <a href="/terms_privacy.asp">Cookie Policy</a>.
+    </p>
+    <a href="#" onclick="gdprhide()" class="gdpr-consent"> I Understand </a>
+</div>
